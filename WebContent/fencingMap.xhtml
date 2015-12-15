@@ -1,0 +1,48 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:m="http://code.google.com/p/gmaps4jsf/" template="template.xhtml">
+
+	<ui:define name="pagetitle">Fencing Map</ui:define>
+	<ui:define name="head">
+		<script type="text/javascript"
+			src="https://maps.googleapis.com/maps/api/js?sensor=false">	
+		</script>
+		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="js/polygon.min.js"></script>
+		<script type="text/javascript" src="js/fencing.js"></script>
+	</ui:define>
+	<link type="text/css" rel="stylesheet"
+		href="#{request.contextPath}/css/style.css" />
+	<ui:define name="body">
+		<br />
+		<center>
+		<div style="width: 100%">
+			<h:form id="form">
+
+				<p:messages id="messages" showSummary="true" showDetail="true" />
+				<p:growl id="growlmessages" showDetail="true" />
+				
+				<div id="header">
+				<span class="instruction">Demo Instruction:</span>
+				Left click on the map to create markers, when last marker meets first marker, it will form a polygon.
+				Right click on the polygon to change its color.
+				</div>
+				<h:outputText value="Enter Facility  Name : " />
+				<h:inputText id="input" value = "#{trackerBean.facilityName}" />
+				<input type="button" value="Reset"  id="reset" />
+				<h:inputHidden id="coords" 
+							value="#{trackerBean.coords}"></h:inputHidden>
+				<h:commandButton value = "Save Coordinates to Database" type="submit" action="#{trackerBean.saveLocation()}" />
+				<c:set var="coordinates" value="#{trackerBean.coordinates}" id="coords"/>
+				<input type="button" value="Fetch Coordinates"  id="showData" onclick="#{trackerBean.saveCoordinateData(coordinates)}" />
+				<div id="main-map"
+							style="width: 800px; height: 800px"></div>
+			</h:form>
+		</div>
+		</center>
+	</ui:define>
+	</ui:composition>

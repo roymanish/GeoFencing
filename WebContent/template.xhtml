@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<f:view contentType="text/html">
+
+	<h:head>
+		<f:facet name="first">
+			<meta content='text/html; charset=UTF-8' http-equiv="Content-Type" />
+			<title><ui:insert name="pagetitle"></ui:insert> - Location
+				Tracker</title>
+
+			<link rel="shortcut icon" type="image/x-icon"
+				href="images/favicon.ico" />
+		</f:facet>
+		<link type="text/css" rel="stylesheet"
+			href="#{request.contextPath}/css/style.css" />
+		<ui:insert name="head"></ui:insert>
+
+	</h:head>
+
+	<h:body class="htmlbody">
+		<h:form id="headerform">
+			<div id="header" class="ui-widget ui-widget-header">
+
+				<div id="logo">
+					<table style="width: 100%">
+						<tr>
+
+							<td style="">
+								<div style="float: left">
+									<img src="#{request.contextPath}/images/logo.png" alt="Logo"
+										height="40" />
+								</div>
+								<div style="float: right">
+									<div id="menu" class="ui-widget">
+
+
+										<p:themeSwitcher value="#{themeSwitcherBean.theme}"
+											style="width:175px;" effect="fade" var="t">
+											<f:selectItem itemLabel="Choose Theme" itemValue="" />
+											<f:selectItems value="#{themeSwitcherBean.advancedThemes}"
+												var="theme" itemLabel="#{theme.name}" itemValue="#{theme}" />
+											<p:ajax listener="#{themeSwitcherBean.saveTheme}" />
+
+											<p:column>
+												<h:graphicImage name="images/themes/#{t.image}" />
+											</p:column>
+
+											<p:column>
+                            #{t.name}
+                        </p:column>
+										</p:themeSwitcher>
+
+
+									</div>
+
+								</div>
+							</td>
+
+						</tr>
+					</table>
+				</div>
+
+				<div style="display: none">
+					<h:outputText value="#{loginMB.user.name}" />
+				</div>
+				<div
+					class="ui-menu ui-menubar ui-widget ui-widget-content ui-corner-all ui-helper-clearfix">
+
+					<p:menubar>
+						<p:menuitem value="Home" url="maps.html" icon="ui-icon-flag" />
+
+						<p:menuitem value="Fencing Map" url="fencingMap.html"
+							icon="ui-icon-flag" />
+					</p:menubar>
+				</div>
+
+			</div>
+
+		</h:form>
+
+		<div>
+			<div style="margin-top: 5px;"
+				class="title ui-widget-header ui-corner-all">
+
+
+				<ui:insert name="pagetitle"></ui:insert>
+
+
+			</div>
+
+			<div id="mainbody" style="margin-left: 5px; height: 1500px">
+				<div class="post">
+					<ui:insert name="body"></ui:insert>
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<br />
+		<br />
+
+		<br />
+		<br />
+		<br />
+		<br />
+
+		<br />
+		<br />
+
+		<br />
+		<br />
+		<br />
+		<br />
+
+
+		<div id="header" class="ui-widget ui-widget-header" align="center">
+			<h:outputText value="LM Team" />
+		</div>
+
+	</h:body>
+
+</f:view>
+
+</html>

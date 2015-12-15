@@ -1,0 +1,456 @@
+/******************************************************
+Default Prime Faces Output Panel Loading
+*/
+.ui-outputpanel-loading {
+	width: 100%;
+	height: 19px;
+	align: center;
+	background-image: url('../images/ajax-loader-line.gif') !important;
+	background-repeat: no-repeat;
+}
+/***************************************************
+Event Details Page
+****************************************************/
+#event-details-upleft {
+	width: 60%;
+	min-height: 300px;
+	background: white;
+	float: left;
+}
+
+#event-details-upright {
+	width: 40%;
+	min-height: 200px;
+	background: white;
+	float: left
+}
+
+#event-details-below {
+	height: 20px;
+	width: 400px;
+	background: green
+}
+
+.event-details-user-comments {
+	color: rgb(102, 102, 102);
+	cursor: auto;
+	display: inline;
+	font-family: Segoe, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: auto;
+}
+
+.event-details-user-consent {
+	color: rgb(102, 102, 102);
+	cursor: auto;
+	display: inline;
+	font-family: Segoe, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: auto;
+}
+
+/***************************************************
+
+****************************************************/
+.thumbImage {
+	border-bottom-color: rgb(255, 255, 255);
+	border-bottom-style: none;
+	border-bottom-width: 0px;
+	border-image-outset: 0px;
+	border-image-repeat: stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: rgb(255, 255, 255);
+	border-left-style: none;
+	border-left-width: 0px;
+	border-right-color: rgb(255, 255, 255);
+	border-right-style: none;
+	border-right-width: 0px;
+	border-top-color: rgb(255, 255, 255);
+	border-top-style: none;
+	border-top-width: 0px;
+	color: rgb(255, 255, 255);
+	cursor: auto;
+	display: block;
+	font-family: Segoe, Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	height: 48px;
+	line-height: 48px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 5px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	text-align: center;
+	text-decoration: none solid rgb(255, 255, 255);
+	vertical-align: baseline;
+	width: 48px;
+	zoom: 1;
+}
+
+/*
+Home Page Post List
+*/
+.postedOn {
+	color: rgb(102, 102, 102);
+	cursor: auto;
+	display: inline;
+	font-family: Segoe, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: auto;
+}
+
+.miniBlogPost {
+	color: black;
+	display: block;
+	font-family: Segoe, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: 34px;
+	line-height: 17px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	display: block;
+}
+
+.blogPostedBy {
+	color: rgb(0, 63, 147);
+	cursor: auto;
+	display: inline;
+	font-family: Segoe, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	height: auto;
+}
+
+.blogPostedBy a {
+	color: rgb(0, 63, 147);
+	text-decoration: none;
+	border-bottom: 0;
+}
+
+.topHeader {
+	background-color: rgb(234, 235, 234);
+	background-image: none;
+	border-bottom-color: rgb(153, 153, 153);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0px;
+	border-image-repeat: stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: rgb(51, 51, 51);
+	border-left-style: none;
+	border-left-width: 0px;
+	border-right-color: rgb(51, 51, 51);
+	border-right-style: none;
+	border-right-width: 0px;
+	border-top-color: rgb(51, 51, 51);
+	border-top-style: none;
+	border-top-width: 0px;
+	color: rgb(51, 51, 51);
+	display: block;
+	font-family: Segoe, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: 56px;
+	line-height: 12px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	min-width: 980px;
+	overflow-x: hidden;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	position: relative;
+	vertical-align: baseline;
+	width: 100%;
+	z-index: 3500;
+}
+
+.formLabel {
+	color: rgb(102, 102, 102);
+	cursor: default;
+	display: block;
+	font-family: Segoe, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	height: 16px;
+	line-height: 16px;
+	margin-bottom: 6px;
+	text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+	width: 599px;
+	zoom: 1;
+}
+
+.formHeadingText {
+	color: rgb(51, 51, 51);
+	display: block;
+	font-family: Segoe, Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 10px;
+	text-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px;
+	zoom: 1;
+}
+
+.formInput {
+	width: 400px
+}
+
+.formInputCreateEvent {
+	width: 800px
+}
+
+.headerMenuBar {
+	background-color: rgb(245, 245, 245);
+	border-bottom-color: rgb(204, 204, 204);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0px;
+	border-image-repeat: stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: rgb(34, 34, 34);
+	border-left-style: none;
+	border-left-width: 0px;
+	border-right-color: rgb(34, 34, 34);
+	border-right-style: none;
+	border-right-width: 0px;
+	border-top-color: rgb(34, 34, 34);
+	border-top-style: none;
+	border-top-width: 0px;
+	color: rgb(34, 34, 34);
+	display: block;
+	font-family: Segoe, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: 37px;
+	left: 0px;
+	line-height: 12px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	min-width: 980px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	position: absolute;
+	right: 0px;
+	top: auto;
+	vertical-align: baseline;
+	width: 1583px;
+}
+
+.selectedMenu {
+	background-color: rgb(255, 255, 255);
+	border-bottom-color: rgb(204, 204, 204);
+	border-bottom-style: solid;
+	border-bottom-width: 0px;
+	border-image-outset: 0px;
+	border-image-repeat: stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: rgb(204, 204, 204);
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: rgb(204, 204, 204);
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: rgb(204, 204, 204);
+	border-top-style: solid;
+	border-top-width: 0px;
+	color: rgb(51, 51, 51);
+	cursor: auto;
+	display: block;
+	font-family: Segoe, Helvetica, Arial, sans-serif;
+	font-size: 0px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: 37px;
+	line-height: 0px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 1px;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 0px;
+	text-align: left;
+	width: 53px;
+}
+
+/*****************************USER Information Page****************************************************/
+.user-name {
+	border-bottom-color: rgb(51, 51, 51);
+	border-bottom-style: none;
+	border-bottom-width: 0px;
+	border-image-outset: 0px;
+	border-image-repeat: stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: rgb(51, 51, 51);
+	border-left-style: none;
+	border-left-width: 0px;
+	border-right-color: rgb(51, 51, 51);
+	border-right-style: none;
+	border-right-width: 0px;
+	border-top-color: rgb(51, 51, 51);
+	border-top-style: none;
+	border-top-width: 0px;
+	color: rgb(51, 51, 51);
+	display: block;
+	font-family: Segoe, Helvetica, Arial, sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: 24px;
+	line-height: 24px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	max-width: 1000px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	vertical-align: baseline;
+	width: 1000px;
+	word-wrap: break-word;
+}
+/*********************************************************************************/
+#mainbody {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+input {
+	width: '200px'
+}
+
+img {
+	border: none;
+}
+
+.codeMirrorTextArea {
+	width: 100%;
+	height: 400px;
+}
+
+.codeMirrorTextArea textarea {
+	width: 90%;
+	height: 500px;
+}
+
+.title {
+	height: 25px;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-top: 5px;
+	font-family: verdana;
+	font-size: 1em;
+}
+
+.htmlbody {
+	margin: 0px;
+	margin-left: 0px;
+}
+
+#menu {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	padding: 0;
+	overflow: hidden;
+}
+
+#menu ul {
+	margin: 0;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu li a {
+	display: block;
+	float: left;
+	padding: 18px 5px 5px 5px;
+	padding-right: 25px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#menu li a:hover {
+	text-decoration: underline;
+}
+
+div#header{
+	font-size:22px;
+	color:#888;
+}
+span.instruction{
+	font-weight:bold;
+	
+}
+div#side{
+	width:30%;
+	float:left;
+}
+div#dataPanel{
+	width:90%;
+	height:50%;
+	overflow:auto;
+	border:2px solid #DDDDDD;
+}

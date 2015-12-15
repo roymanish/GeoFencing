@@ -1,0 +1,81 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:m="http://code.google.com/p/gmaps4jsf/" template="template.xhtml">
+
+	<ui:define name="pagetitle">Maps</ui:define>
+	<ui:define name="head">
+		<script type="text/javascript"
+			src="https://maps.googleapis.com/maps/api/js?sensor=false">
+			
+		</script>
+		<script type="text/javascript" src="js/PathTracker.js">
+			
+		</script>
+	</ui:define>
+	<link type="text/css" rel="stylesheet"
+		href="#{request.contextPath}/css/style.css" />
+
+	<ui:define name="body">
+		<br />
+		<div style="width: 100%; float: left">
+			<h:form id="form">
+
+				<p:messages id="messages" showSummary="true" showDetail="true" />
+				<p:growl id="growlmessages" showDetail="true" />
+
+				<p:tabView id="tabView" style="width: 1000px">
+					<p:tab title="Tabular" style="width: 1000px">
+						<p:dataTable var="locations" value="#{trackerBean.locations}">
+							<f:facet name="header">
+							Locations
+						</f:facet>
+							<p:column filterBy="#{locations.vehicle}">
+								<f:facet name="header">
+									<h:outputText value="Vehicle" />
+								</f:facet>
+								<h:outputText value="#{locations.vehicle}" />
+							</p:column>
+							<p:column sortBy="#{locations.latitude}">
+								<f:facet name="header">
+									<h:outputText value="Latitude" />
+								</f:facet>
+								<h:outputText value="#{locations.latitude}" />
+							</p:column>
+							<p:column sortBy="#{locations.longitude}">
+								<f:facet name="header">
+									<h:outputText value="Longitude" />
+								</f:facet>
+								<h:outputText value="#{locations.longitude}" />
+							</p:column>
+						</p:dataTable>
+					</p:tab>
+					<p:tab title="Maps" id="mapsTab" style="width: 1000px">
+						<br />
+						<center>
+						<h:outputText value="Select Vehicle :" />
+						<h:selectOneMenu id ="vehicleName" binding="#{trackerBean.locationSelectOneMenu}" onchange="showMap();"/>
+						</center>
+						<!-- <center>
+							<p:commandButton value="Show Path" type="submit"
+								onclick="showMap();" />
+						</center>-->
+						<br />
+						<h:inputHidden id="markers" 
+							value="#{trackerBean.delimitedLocData}"></h:inputHidden>
+						<div id="dvMap"
+							style="width: 800px; height: 800px; visibility: hidden"></div>
+
+
+					</p:tab>
+				</p:tabView>
+
+			</h:form>
+		</div>
+	</ui:define>
+
+
+
+</ui:composition>
